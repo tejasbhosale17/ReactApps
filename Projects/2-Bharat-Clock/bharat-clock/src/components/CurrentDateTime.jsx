@@ -1,21 +1,9 @@
 function CurrentDateTime() {
   var curDate = new Date();
-  var curTime =
-    curDate.getDate() +
-    "/" +
-    (curDate.getMonth() + 1) +
-    "/" +
-    curDate.getFullYear() +
-    " - " +
-    curDate.getHours() +
-    ":" +
-    curDate.getMinutes() +
-    ":" +
-    curDate.getSeconds();
-
   return (
     <div className="conatiner-dt">
-      This is the current Date and Time: {curTime}
+      This is the current Date and Time: {curDate.toLocaleDateString()} -{" "}
+      {curDate.toLocaleTimeString()}
     </div>
   );
 }
