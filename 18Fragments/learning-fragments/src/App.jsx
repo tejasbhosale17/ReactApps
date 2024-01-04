@@ -1,6 +1,7 @@
 import React from "react";
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
+import "./App.css";
 function App() {
   let foodItems = [
     "Avacados",
@@ -18,7 +19,7 @@ function App() {
   // }
   return (
     <React.Fragment>
-      <h1>Halthy Food Items </h1>
+      <h1 className="food-heading">Halthy Food Items </h1>
       {/*Second Method 
       {FoodItems.length === 0 ? <h2>I am Still Hungry</h2> : null} */}
 
