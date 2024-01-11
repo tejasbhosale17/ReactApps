@@ -5,7 +5,13 @@ import FoodInput from "./components/FoodInput";
 import "./App.css";
 import { useState } from "react";
 function App() {
-  let foodItems = ["Avacados", "Fruits", "Green Vegetables", "Milk", "Sprouts"];
+  // let foodItems = ["Avacados", "Fruits", "Green Vegetables", "Milk", "Sprouts"];
+
+  let [foodItems, setFoodItems] = useState([
+    "Avacados",
+    "Fruits",
+    "Green Vegetables",
+  ]);
 
   // let textStateArr = useState("Food Item entered by u");
   // let textToShow = textStateArr[0];
