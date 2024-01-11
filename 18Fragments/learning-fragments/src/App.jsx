@@ -8,21 +8,28 @@ function App() {
   // let foodItems = ["Avacados", "Fruits", "Green Vegetables", "Milk", "Sprouts"];
 
   let [foodItems, setFoodItems] = useState([
-    "Avacados",
-    "Fruits",
-    "Green Vegetables",
+    // "Avacados",
+    // "Fruits",
+    // "Green Vegetables",
   ]);
 
   // let textStateArr = useState("Food Item entered by u");
   // let textToShow = textStateArr[0];
   // let setTextToShow = textStateArr[1];
 
-  let [textToShow, setTextToShow] = useState("Food Item entered by u");
+  let [textToShow, setTextToShow] = useState("");
 
   // console.log(`Current value of textState: ${textToShow}`);
 
-  const handelOnChange = (event) => {
-    console.log(event.target.value);
+  const handelOnKeyDown = (event) => {
+    if (event.key === "Enter") {
+      let newFoodItem = event.target.value;
+      event.target.value = "";
+      let newItems = [...foodItems, newFoodItem];
+      setFoodItems(newItems);
+      console.log(newFoodItem);
+    }
+    // console.log(event);
     setTextToShow(event.target.value);
   };
 
@@ -31,7 +38,7 @@ function App() {
       <Container>
         <h1 className="food-heading">Healthy Food </h1>
 
-        <FoodInput handelOnChange={handelOnChange}></FoodInput>
+        <FoodInput handelOnKeyDown={handelOnKeyDown}></FoodInput>
         <p>{textToShow}</p>
         <FoodItems FoodItems={foodItems}></FoodItems>
         <ErrorMessage FoodItems={foodItems}></ErrorMessage>
