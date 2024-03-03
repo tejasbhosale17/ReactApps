@@ -22,11 +22,20 @@ function App() {
     "0",
     ".",
   ];
+
+  const handelOnKeyDown = (event) => {
+    let enteredValue = event.target.value;
+    console.log(enteredValue);
+  };
+
   return (
     <div className={styles.calculator}>
       <AppName></AppName>
       <Display></Display>
-      <Buttons values={values}></Buttons>
+      <Buttons
+        values={values}
+        handelOnKeyDown={() => handelOnKeyDown(event)}
+      ></Buttons>
     </div>
   );
 }
