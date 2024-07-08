@@ -2,40 +2,30 @@ import styles from "./App.module.css";
 import Display from "./components/Display";
 import Buttons from "./components/Buttons";
 import AppName from "./components/AppName";
+import { useState } from "react";
 function App() {
-  let values = [
-    "C",
-    "1",
-    "2",
-    "+",
-    "3",
-    "4",
-    "-",
-    "5",
-    "6",
-    "*",
-    "7",
-    "8",
-    "/",
-    "=",
-    "9",
-    "0",
-    ".",
-  ];
-
-  const handelOnKeyDown = (event) => {
-    let enteredValue = event.target.value;
-    console.log(enteredValue);
+  const [calVal, setCalVal] = useState("");
+  const onButtonClick = (item) => {
+    if (item === "C") {
+      setCalVal("");
+    } else if (item === "=") {
+      const result = eval(calVal);
+      setCalVal(result);
+    } else {
+      const newDisplayValue = calVal + item;
+      setCalVal(newDisplayValue);
+    }
   };
 
   return (
     <div className={styles.calculator}>
       <AppName></AppName>
-      <Display></Display>
-      <Buttons
+      <Display displayValue={calVal}></Display>
+      {/* <Buttons
         values={values}
         handelOnKeyDown={() => handelOnKeyDown(event)}
-      ></Buttons>
+      ></Buttons> */}
+      <Buttons onButtonClick={onButtonClick}></Buttons>
     </div>
   );
 }

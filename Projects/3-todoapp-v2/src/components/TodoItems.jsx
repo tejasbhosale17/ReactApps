@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
-import "./todoItems.module.css";
-const TodoItems = ({ todoItems }) => {
+// import "./todoItems.module.css";
+const TodoItems = ({ todoItems, onDeleteClick }) => {
   console.log(todoItems);
   return (
     <>
@@ -10,6 +10,7 @@ const TodoItems = ({ todoItems }) => {
             key={item}
             todoName={item.name}
             todoDate={item.dueDate}
+            onDeleteClick={onDeleteClick}
           ></TodoItem>
         ))}
       </div>

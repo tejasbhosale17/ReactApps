@@ -1,4 +1,4 @@
-function TodoItem({ todoName, todoDate }) {
+function TodoItem({ todoName, todoDate, onDeleteClick }) {
   // let todoName = "Complete Reactjs Course";
   // let todoDate = "07-01-2024";
 
@@ -12,6 +12,7 @@ function TodoItem({ todoName, todoDate }) {
           <button
             className="btn btn-danger kg-button align-item: center"
             type="submit"
+            onClick={() => onDeleteClick(todoName)}
           >
             Done
           </button>
