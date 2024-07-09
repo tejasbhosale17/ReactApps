@@ -1,7 +1,7 @@
 import TodoItem from "./TodoItem";
 // import "./todoItems.module.css";
 const TodoItems = ({ todoItems, onDeleteClick }) => {
-  console.log(todoItems);
+  // console.log(todoItems);
   return (
     <>
       <div className="item-container">

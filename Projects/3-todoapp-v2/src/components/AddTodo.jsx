@@ -1,52 +1,59 @@
 import "./addTodo.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { BiMessageAdd } from "react-icons/bi";
 function AddTodo({ handleNewItem }) {
-  const [todoName, setTodoName] = useState();
-  const [dueDate, setDueDate] = useState();
+  // const [todoName, setTodoName] = useState("");
+  // const [dueDate, setDueDate] = useState("");
+  const todoNameElement = useRef();
+  const dueDateElement = useRef();
 
-  const handleNameChange = (event) => {
-    setTodoName(event.target.value);
-  };
+  // const handleNameChange = (event) => {
+  //   setTodoName(event.target.value);
+  // };
 
-  const handleDateChange = (event) => {
-    setDueDate(event.target.value);
-  };
+  // const handleDateChange = (event) => {
+  //   setDueDate(event.target.value);
+  // };
 
-  const handleAddButtonClicked = () => {
+  const handleAddButtonClicked = (event) => {
+    event.preventDefault();
+    const todoName = todoNameElement.current.value;
+    const dueDate = dueDateElement.current.value;
+    todoNameElement.current.value = "";
+    dueDateElement.current.value = "";
+    console.log(`TodoName:${todoName} and DueDate:${dueDate}`);
     handleNewItem(todoName, dueDate);
-    setTodoName("");
-    setDueDate("");
+    // setTodoName("");
+    // setDueDate("");
   };
 
   return (
     <div>
       <div className="container text-center">
-        <div className="row kg-row">
+        <form className="row kg-row" onSubmit={handleAddButtonClicked}>
           <div className="col-sm-6">
             <input
               type="text"
+              ref={todoNameElement}
               placeholder="Enter Todo here"
-              value={todoName}
-              onChange={handleNameChange}
+              // value={todoName}
+              // onChange={handleNameChange}
             ></input>
           </div>
           <div className="col-sm-4">
             <input
               type="date"
-              value={dueDate}
-              onChange={handleDateChange}
+              ref={dueDateElement}
+              // value={dueDate}
+              // onChange={handleDateChange}
             ></input>
           </div>
           <div className="col-sm-2">
-            <button
-              className="btn btn-success kg-button"
-              type="button"
-              onClick={handleAddButtonClicked}
-            >
-              Add
+            <button className="btn btn-success kg-button">
+              <BiMessageAdd />
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

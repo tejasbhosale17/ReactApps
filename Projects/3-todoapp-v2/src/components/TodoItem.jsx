@@ -1,8 +1,9 @@
+import { MdDelete } from "react-icons/md";
 function TodoItem({ todoName, todoDate, onDeleteClick }) {
   // let todoName = "Complete Reactjs Course";
   // let todoDate = "07-01-2024";
 
-  console.log(todoName, todoDate);
+  //console.log(todoName, todoDate);
   return (
     <div className="container">
       <div className="row kg-row">
@@ -14,7 +15,7 @@ function TodoItem({ todoName, todoDate, onDeleteClick }) {
             type="submit"
             onClick={() => onDeleteClick(todoName)}
           >
-            Done
+            <MdDelete />
           </button>
         </div>
       </div>
