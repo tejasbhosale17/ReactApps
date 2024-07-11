@@ -9,7 +9,7 @@ const TodoItems = () => {
       <div className="item-container">
         {todoItems.map((item) => (
           <TodoItem
-            key={item}
+            key={item.name}
             todoName={item.name}
             todoDate={item.dueDate}
           ></TodoItem>
