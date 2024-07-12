@@ -5,7 +5,7 @@ const CreatePost = () => {
   const userIdElement = useRef();
   const postTitleElement = useRef();
   const postBodyElement = useRef();
-  const noReactionsElement = useRef();
+  // const noReactionsElement = useRef();
   const yourTagsElement = useRef();
 
   const hanleSubmit = (event) => {
@@ -13,16 +13,16 @@ const CreatePost = () => {
     const userId = userIdElement.current.value;
     const postTitle = postTitleElement.current.value;
     const postBody = postBodyElement.current.value;
-    const noReactions = noReactionsElement.current.value;
+    // const noReactions = noReactionsElement.current.value;
     const yourTags = yourTagsElement.current.value.split(" ");
 
     userIdElement.current.value = "";
     postTitleElement.current.value = "";
     postBodyElement.current.value = "";
-    noReactionsElement.current.value = "";
+    // noReactionsElement.current.value = "";
     yourTagsElement.current.value = "";
 
-    addPost(userId, postTitle, postBody, noReactions, yourTags);
+    addPost(userId, postTitle, postBody, yourTags);
   };
 
   return (
@@ -67,7 +67,7 @@ const CreatePost = () => {
         />
       </div>
 
-      <div className="mb-3">
+      {/* <div className="mb-3">
         <label htmlFor="reaction" className="htmlForm-label">
           Number of Reactions
         </label>
@@ -78,7 +78,7 @@ const CreatePost = () => {
           id="reaction"
           placeholder="How many people reacted?"
         />
-      </div>
+      </div> */}
 
       <div className="mb-3">
         <label htmlFor="tags" className="htmlForm-label">
