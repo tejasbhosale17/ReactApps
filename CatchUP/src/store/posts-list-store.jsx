@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useCallback } from "react";
 
 const DEFAULT_CONTEXT = {
   postList: [],
@@ -47,15 +47,18 @@ const PostListProvider = ({ children }) => {
     });
   };
 
-  const deletePost = (postId) => {
-    dispachPostList({
-      type: "DELETE_POST",
-      payload: {
-        postId,
-      },
-    });
-    // console.log(postId);
-  };
+  const deletePost = useCallback(
+    (postId) => {
+      dispachPostList({
+        type: "DELETE_POST",
+        payload: {
+          postId,
+        },
+      });
+      // console.log(postId);
+    },
+    [dispachPostList]
+  );
 
   return (
     <PostList.Provider
