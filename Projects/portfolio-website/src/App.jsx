@@ -15,30 +15,30 @@ function App() {
 
   const renderContent = (selectedTab) => {
     if (selectedTab === "PROJECTS") {
-      <Projects />;
+      return <ProjectList />;
     } else if (selectedTab === "CAREER") {
-      <Career />;
+      return (
+        <MyWorkProvider>
+          <Career />
+        </MyWorkProvider>
+      );
     } else if (selectedTab === "CONTACT_ME") {
-      <ContactMe />;
+      return <ContactMe />;
+    } else {
+      return <Overview />;
     }
   };
   return (
     <>
       <MyProjectProvider>
-        {/* <div>Placeholder</div> */}
         <div className="Home">
           <Header
             selectedTab={selectedTab}
             setSelectedTab={setSelectedTab}
-            renderContent={renderContent()}
           ></Header>
 
-          <Overview />
-          <ProjectList />
-          <MyWorkProvider>
-            <Career />
-          </MyWorkProvider>
-          <ContactMe />
+          {renderContent(selectedTab)}
+
           <Footer></Footer>
         </div>
       </MyProjectProvider>

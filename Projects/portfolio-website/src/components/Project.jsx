@@ -1,17 +1,50 @@
 /* eslint-disable react/prop-types */
 const Project = ({ project }) => {
   return (
-    <div className="card" style={{ width: "18rem" }}>
-      <img src="..." className="card-img-top" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">{project.title}</h5>
-        <p className="card-text">{project.body}</p>
-        <p className="card-text">{project.skills}</p>
-        <a href="#" className="btn btn-primary">
-          {project.link}
-        </a>
-      </div>
+    <div className="col">
+      {/* <div className="card project">
+        <img
+          src={project.imglink}
+          className="project-image"
+          alt="PROJECT Image"
+        />
+        <div className="card-body">
+          <h5 className="card-title">{project.title}</h5>
+          <p className="card-text">{project.body}</p>
+          <p className="card-text">{project.skills}</p>
+          <a href={project.link} className="btn btn-primary">
+            GitHub
+          </a>
+        </div>
+      </div> */}
+      <center className="project-content-center">
+        <div className="card mb-3 project" style={{ maxWidth: "540px" }}>
+          <div className="row g-0">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">{project.title}</h5>
+                <p className="card-text" style={{ textAlign: "justify" }}>
+                  {project.body}
+                </p>
+                <p className="card-text">{project.skills}</p>
+                <a href={project.link} className="btn btn-primary">
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <img
+                src={project.imglink}
+                className="project-image"
+                alt="PROJECT Image"
+              />
+            </div>
+          </div>
+        </div>
+      </center>
     </div>
   );
 };
 export default Project;
+{
+}

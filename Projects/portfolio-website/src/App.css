@@ -1,3 +1,19 @@
 .home{
   background-color: gray;
 }
+.project{
+  width: "18rem" ;
+  /* margin: 0 50px; */
+}
+/* .project-list{
+  display: flex;
+} */
+
+.project-image{
+  width: 500px;
+  height: 500px;
+}
+
+.project-content-center{
+  margin-right: 30%;
+}

@@ -27,9 +27,7 @@ const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li
               onClick={() => {
-                <Overview />;
-                // setSelectedTab("HOME");
-                // renderContent(selectedTab);
+                setSelectedTab("HOME");
               }}
             >
               <a href="#" className="nav-link px-2 link-secondary">
@@ -38,9 +36,7 @@ const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
             </li>
             <li
               onClick={() => {
-                <Projects />;
-                // setSelectedTab("PROJECTS");
-                // renderContent(selectedTab);
+                setSelectedTab("PROJECTS");
               }}
             >
               <a href="#" className="nav-link px-2 link-body-emphasis">
@@ -49,9 +45,7 @@ const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
             </li>
             <li
               onClick={() => {
-                <Career />;
-                // setSelectedTab("CAREER");
-                // renderContent(selectedTab);
+                setSelectedTab("CAREER");
               }}
             >
               <a href="#" className="nav-link px-2 link-body-emphasis">
@@ -60,9 +54,7 @@ const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
             </li>
             <li
               onClick={() => {
-                <ContactMe />;
-                // setSelectedTab("CONTACT_ME");
-                // renderContent(selectedTab);
+                setSelectedTab("CONTACT_ME");
               }}
             >
               <a href="#" className="nav-link px-2 link-body-emphasis">

@@ -7,7 +7,9 @@ const ProjectList = () => {
   return (
     <>
       {projectList.map((project) => (
-        <Project key={project.id} project={project} />
+        <div key={Date.now()} className="row">
+          <Project key={project.id} project={project} />
+        </div>
       ))}
     </>
   );
