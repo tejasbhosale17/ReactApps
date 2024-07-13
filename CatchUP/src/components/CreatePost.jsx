@@ -22,7 +22,19 @@ const CreatePost = () => {
     // noReactionsElement.current.value = "";
     yourTagsElement.current.value = "";
 
-    addPost(userId, postTitle, postBody, yourTags);
+    // console.log("Sending post to server");
+    fetch("https://dummyjson.com/posts/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: postTitle,
+        body: postBody,
+        userId: userId,
+        tags: yourTags,
+      }),
+    })
+      .then((res) => res.json())
+      .then((post) => addPost(post));
   };
 
   return (
