@@ -2,11 +2,13 @@ import Career from "./Career";
 import ContactMe from "./ContectMe";
 import Overview from "./Overview";
 import Projects from "./ProjectList";
+import passportImg from "../assets/passport.jpg";
+import { FaGithub } from "react-icons/fa";
 
 /* eslint-disable react/prop-types */
 const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
   return (
-    <header className="p-3 mb-3 border-bottom">
+    <header className="p-3 mb-3 border-bottom header">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a
@@ -26,44 +28,68 @@ const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
 
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li
+              className="nav-text"
               onClick={() => {
                 setSelectedTab("HOME");
               }}
             >
-              <a href="#" className="nav-link px-2 link-secondary">
+              <a href="#" className="nav-link px-2 " style={{ color: "white" }}>
                 Overview
               </a>
             </li>
             <li
+              className="nav-text"
               onClick={() => {
                 setSelectedTab("PROJECTS");
               }}
             >
-              <a href="#" className="nav-link px-2 link-body-emphasis">
+              <a href="#" className="nav-link px-2" style={{ color: "white" }}>
                 Projects
               </a>
             </li>
             <li
+              className="nav-text"
               onClick={() => {
                 setSelectedTab("CAREER");
               }}
             >
-              <a href="#" className="nav-link px-2 link-body-emphasis">
+              <a href="#" className="nav-link px-2" style={{ color: "white" }}>
                 Career
               </a>
             </li>
             <li
+              className="nav-text"
               onClick={() => {
                 setSelectedTab("CONTACT_ME");
               }}
             >
-              <a href="#" className="nav-link px-2 link-body-emphasis">
+              <a href="#" className="nav-link px-2" style={{ color: "white" }}>
                 Contact Me
               </a>
             </li>
+            <li className="github">
+              <a
+                href="https://github.com/tejasbhosale17"
+                title="Follow me on LinkedIn"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
+            </li>
           </ul>
+          <div>
+            <a href="#" className="d-block link-body-emphasis text-end">
+              <img
+                src={passportImg}
+                alt="mdo"
+                width="50px"
+                height="50px"
+                className="rounded-circle"
+              ></img>
+            </a>
+          </div>
 
-          <div className="dropdown text-end">
+          {/* <div className="dropdown text-end">
             <a
               href="#"
               className="d-block link-body-emphasis text-decoration-none dropdown-toggle"
@@ -71,10 +97,10 @@ const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
               aria-expanded="false"
             >
               <img
-                src="../assets/passport.jpg"
+                src={passportImg}
                 alt="mdo"
-                width="100"
-                height="100"
+                width="50px"
+                height="50px"
                 className="rounded-circle"
               ></img>
             </a>
@@ -93,7 +119,7 @@ const Header = ({ selectedTab, setSelectedTab, renderContent }) => {
                 <hr className="dropdown-divider"></hr>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <MyProjectProvider>
-        <div className="Home">
+        <div className="home">
           <Header
             selectedTab={selectedTab}
             setSelectedTab={setSelectedTab}

@@ -3,6 +3,7 @@
 import { createContext, useReducer } from "react";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.jpg";
+
 import { FaJava, FaReact, FaGithub, FaPython } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiOpencv } from "react-icons/si";
