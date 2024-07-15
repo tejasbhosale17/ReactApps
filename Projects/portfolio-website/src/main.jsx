@@ -1,9 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App from "./routes/App.jsx";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Overview from "./components/Overview.jsx";
+import ProjectList from "./components/ProjectList.jsx";
+import Career from "./components/Career.jsx";
+import ContactMe from "./components/ContectMe.jsx";
+import MyWorkProvider from "./store/work-list-store.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { path: "/", element: <Overview /> },
+      {
+        path: "/project",
+        element: <ProjectList />,
+      },
+      {
+        path: "/career",
+        element: (
+          <MyWorkProvider>
+            <Career />
+          </MyWorkProvider>
+        ),
+      },
+      {
+        path: "/contactme",
+        element: <ContactMe />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
