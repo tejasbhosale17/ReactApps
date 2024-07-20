@@ -8,15 +8,12 @@ const ProjectList = () => {
   let pnum = 100;
   return (
     <>
-      {projectList.map((project) => (
-        <div className="album py-5 bg-body-tertiary" key={num++}>
-          <div className="container">
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <Project key={pnum++} project={project} />
-            </div>
-          </div>
-        </div>
-      ))}
+      {/* {projectList.map((project) => ( */}
+      <div className="album py-5 bg-body-tertiary" key={num++}>
+        {/* <Project key={pnum++} project={project} /> */}
+        <Project />
+      </div>
+      // ))}
     </>
   );
 };

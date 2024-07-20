@@ -1,0 +1,22 @@
+.overview{
+  
+  width: 100%;
+  height: 100%;
+}
+
+/* .skill-name{
+  font-family: "moonspace";
+} */
+
+.skill-cols{
+  width: 20%;
+}
+.section{
+  padding: 3rem 4.3rem;
+}
+.section.light{
+  padding: 9.6rem 4.3rem;
+  border-bottom: #dddddd solid 1px;
+  overflow: hidden;
+  border-top: #ffffff solid 1px;
+}

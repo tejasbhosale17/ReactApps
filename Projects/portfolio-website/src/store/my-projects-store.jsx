@@ -42,7 +42,18 @@ const DEFAULT_PROJECT_LIST = [
     id: "1",
     title: "Portfolio",
     body: projectDescriptions.instituteDataManagement,
-    skills: [<FaJava />, <SiMysql />, <FaReact />, <FaGithub />],
+    skills: [
+      <FaJava style={{ height: "50px", width: "50px", paddingRight: "5px" }} />,
+      <SiMysql
+        style={{ height: "50px", width: "50px", paddingRight: "5px" }}
+      />,
+      <FaReact
+        style={{ height: "50px", width: "50px", paddingRight: "5px" }}
+      />,
+      <FaGithub
+        style={{ height: "50px", width: "50px", paddingRight: "5px" }}
+      />,
+    ],
     link: "https://tejasbhosale17.github.io/tejasportfolio.github.io/",
     imglink: project1,
   },
@@ -50,7 +61,17 @@ const DEFAULT_PROJECT_LIST = [
     id: "2",
     title: "Face Mask Detection and Monitoring System",
     body: projectDescriptions.faceMaskDetection,
-    skills: [<FaPython />, <SiOpencv />, <GiArtificialIntelligence />],
+    skills: [
+      <FaPython
+        style={{ height: "50px", width: "50px", paddingRight: "5px" }}
+      />,
+      <SiOpencv
+        style={{ height: "50px", width: "50px", paddingRight: "5px" }}
+      />,
+      <GiArtificialIntelligence
+        style={{ height: "50px", width: "50px", paddingRight: "5px" }}
+      />,
+    ],
     link: "https://www.linkedin.com/in/tejas-bhosale-195871159/",
     imglink: project2,
   },
