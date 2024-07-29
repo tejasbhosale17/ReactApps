@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+.face{
+  height: 600px;
+  width: 50%;
+  float: left;
+  background-size: cover;
+}
+#face1{
+  background-image: url("profileImg1.jpg");
+}
+#face2{
+  background-image: url("firstImg.png");
+  background-position: 100% 0;
+}
+.faces{
+  position: absolute;
+  left: 25%;
+
+}
+.text{
+  position: absolute;
+  padding: 20px;
+  top: 40%;
+  z-index: 3;
+}
+#text1{
+ left: 300px;
+ top: 232px;
+ text-align: left;
+}
+#text2{
+  right: 260px;
+  top: 232px;
+  text-align: right;
+}
