@@ -37,7 +37,7 @@ function moveLeft(face1Width, face2Width){
     var picPos =faces.offsetLeft;
     maxLeft=150;
     if(picPos>maxLeft){
-      faces.style.left =picPos-10+"px";
+      faces.style.left =picPos-5+"px";
     }
 
   }
@@ -59,7 +59,7 @@ function moveRight(face1Width, face2Width){
     var picPos =faces.offsetLeft;
     var maxRight =screenWidth/2-150;
     if(picPos<maxRight){
-      faces.style.left =picPos +10+"px";
+      faces.style.left =picPos +5+"px";
     }
   }
 }

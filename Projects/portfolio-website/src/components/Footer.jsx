@@ -17,7 +17,7 @@ const Footer = () => {
             </svg>
           </a>
           <span className="mb-3 mb-md-0 text-body-secondary">
-            © 2024 Company, Inc
+            © www.tejasportfolio.com
           </span>
         </div>
 

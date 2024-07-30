@@ -1,0 +1,90 @@
+@media only screen and (min-width: 428px) {
+  section.light, section.dark, section.noise, section.main {
+      padding: 8rem 4.3rem;
+  }
+}
+section.light {
+  border-bottom: #dddddd solid 1px;
+}
+section.light, section.main {
+  overflow: hidden;
+  border-top: #ffffff solid 1px;
+  padding: 6.4rem 3.2rem;
+}
+.nopad-b {
+  padding-bottom: 0 !important;
+}
+.nopad-t {
+  padding-top: 0 !important;
+}
+.clearfix, section, .row {
+}
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  background: transparent;
+}
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  background-color: transparent;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #333333;
+  text-rendering: optimizeLegibility;
+}
+#designer-img{
+  background-image: url("profileImg1.jpg");
+}
+#coder-img{
+  background-image: url("firstImg.png");
+}
+
+.home .row:not(.copy-width), #header .row:not(.copy-width), #footer .row:not(.copy-width), #bar-chart .row:not(.copy-width), .portfolio-main #content-detail .row:not(.copy-width), .portfolio #content-detail .row:not(.copy-width) {
+  max-width: 1040px;
+}
+.face {
+  width: 100%;
+  position: relative;
+}
+.face a {
+  color: #757575;
+  text-decoration: none;
+}
+.face .coder {
+  right: 0;
+  text-align: right;
+}
+.face .face-img {
+  display: block;
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+

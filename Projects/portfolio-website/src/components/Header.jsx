@@ -1,15 +1,17 @@
 import portfolioLogo from "../assets/logo.png";
 
 import { Link } from "react-router-dom";
-
+// import useLeavePage from "../components/scripts/leavePage";
 /* eslint-disable react/prop-types */
 const Header = () => {
+  // const handleLeavePage = useLeavePage();
   return (
-    <header className="p-3 mb-3 border-bottom header">
+    <header className="p-3 mb-3 border-bottom header" id="header-comp">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <Link
             to="/"
+            // onClick={(e) => handleLeavePage(e, "/")}
             className="d-block link-body-emphasis"
             style={{ marginRight: "350px" }}
           >
@@ -35,6 +37,7 @@ const Header = () => {
               <li className="nav-text">
                 <Link
                   to="/project"
+                  // onClick={(e) => handleLeavePage(e, "/project")}
                   className="nav-link px-2"
                   style={{ color: "white" }}
                 >
@@ -44,6 +47,7 @@ const Header = () => {
               <li className="nav-text">
                 <Link
                   to="/career"
+                  // onClick={(e) => handleLeavePage(e, "/career")}
                   className="nav-link px-2"
                   style={{ color: "white" }}
                 >
@@ -53,6 +57,7 @@ const Header = () => {
               <li className="nav-text">
                 <Link
                   to="/contactme"
+                  // onClick={(e) => handleLeavePage(e, "/contactme")}
                   className="nav-link px-2"
                   style={{ color: "white" }}
                 >
