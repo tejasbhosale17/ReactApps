@@ -18,7 +18,7 @@ const Overview = () => {
     <div className="overview-page">
       <Face2 />
       <div className="container col-xxl-8 px-4 py-5  overview ">
-        <section>
+        {/* <section>
           <div
             className="row flex-lg-row-reverse align-items-center g-5 py-5 light"
             style={{
@@ -83,7 +83,7 @@ const Overview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <div>
           <div className="px-4 pt-5 my-5 text-center border-bottom">
             <h1 className="display-4 fw-bold text-body-emphasis">

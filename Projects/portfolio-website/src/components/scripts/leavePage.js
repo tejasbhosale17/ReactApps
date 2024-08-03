@@ -12,8 +12,8 @@ const useLeavePage = () => {
     document.getElementById('header-comp').style.top = '-92px';
     
     document.body.style.transition = 'opacity 0.5s ease-out';
-    document.body.style.opacity = '0';
-
+    document.body.style.opacity = '1';
+    document.body.style.top='10px';
     setTimeout(() => {
       navigate(linkLocation);
     }, 500);
