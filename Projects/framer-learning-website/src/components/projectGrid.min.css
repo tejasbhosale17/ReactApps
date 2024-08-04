@@ -1,0 +1,46 @@
+.projectGrid{
+  margin: 170px 191px;
+  height: 600px;
+  width: 80%;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.container{
+  width: 1400px;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 20px;
+}
+
+.container .box{
+  width:100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  cursor: pointer;
+}
+.container .box img{
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+
+
+/* .my-masonry-grid {
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+  margin-left: -30px; 
+  width: auto;
+} */
+/* .my-masonry-grid_column {
+  padding-left: 30px; 
+  background-clip: padding-box;
+} */
+
+
+/* .my-masonry-grid_column > div { 
+  background: grey;
+  margin-bottom: 30px;
+} */

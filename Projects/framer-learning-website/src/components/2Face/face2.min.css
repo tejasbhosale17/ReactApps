@@ -1,0 +1,44 @@
+.faceMain{
+  margin: 48px 0;
+  padding: 0;
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  border-bottom: inset;
+  border-bottom-width:initial;
+}
+.face{
+  height: 800px;
+  width: 50%;
+  float: left;
+  background-size: cover;
+  transition: width 0.1s;
+}
+#face1{
+  background-image: url("../assets/2faceImg/newImages/profileImg1.png");
+}
+#face2{
+  background-image: url("../assets/2faceImg/newImages/firstImg.png");
+  background-position: 100% 0;
+}
+.faces{
+  position: relative;
+  overflow: hidden;
+  left: 25%;
+  width: 948px;
+  height: 800px;
+}
+.text{
+  position: absolute;
+  padding: 20px;
+  top: 40%;
+  z-index: 3;
+}
+#text1{
+ left: 300px;
+ top: 232px;
+ text-align: left;
+}
+#text2{
+  right: 260px;
+  top: 232px;
+  text-align: right;
+}

@@ -1,0 +1,33 @@
+
+.home{
+  background-color: #f9f9f9;
+}
+
+.header{
+  background-color:#111;
+  padding: 0 5%;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+.header nav li a{
+  display: block;
+  color: #FFF;
+  line-height: 92px;
+  padding: 0 1em;
+  text-decoration: none;
+  list-style: none;
+}
+.nav-text{
+  margin-right: 30px;
+}
+
+.nav-social-logo{
+  width: 30px;
+  height: 30px;
+  margin: 15px 15px;
+  color: #FFF;
+}
