@@ -13,12 +13,14 @@ import { FcLinux } from "react-icons/fc";
 import { IoLogoGithub } from "react-icons/io5";
 import { DiJenkins } from "react-icons/di";
 import Face2 from "./Face2";
+import ProjectGrid from "./ImageGrids/ProjectGrid";
 const Overview = () => {
   return (
     <div className="overview-page">
       <Face2 />
-      <div className="container col-xxl-8 px-4 py-5  overview ">
-        {/* <section>
+      <ProjectGrid />
+      {/* <div className="container col-xxl-8 px-4 py-5  overview "> */}
+      {/* <section>
           <div
             className="row flex-lg-row-reverse align-items-center g-5 py-5 light"
             style={{
@@ -84,251 +86,250 @@ const Overview = () => {
             </div>
           </div>
         </section> */}
-        <div>
-          <div className="px-4 pt-5 my-5 text-center border-bottom">
-            <h1 className="display-4 fw-bold text-body-emphasis">
-              Technical skills
-            </h1>
-            <div className="album py-5 bg-body-tertiary">
-              <div className="container">
-                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
+      <div>
+        <div className="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 className="display-4 fw-bold text-body-emphasis">
+            Technical skills
+          </h1>
+          <div className="album py-5 bg-body-tertiary">
+            <div className="container">
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <BiLogoJava
                       style={{
-                        fontSize: "larger",
+                        height: "150px",
+                        width: "100%",
+                        color: "#5382a1",
                       }}
-                    >
-                      <BiLogoJava
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "#5382a1",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">Java</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <FaReact
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "aqua",
-                        }}
-                      />
-
-                      <div className="card-body skill-name">
-                        <p className="card-text">React</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <BiLogoSpringBoot
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "forestgreen",
-                        }}
-                      />
-
-                      <div className="card-body skill-name">
-                        <p className="card-text">Spring Boot</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <SiMysql
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "#00758f",
-                        }}
-                      />
-
-                      <div className="card-body skill-name">
-                        <p className="card-text">MySQL</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <BiLogoAws
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          backgroundColor: "#131A22",
-                          color: "aliceblue",
-                        }}
-                      />
-
-                      <div className="card-body skill-name">
-                        <p className="card-text">AWS</p>
-                      </div>
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">Java</p>
                     </div>
                   </div>
                 </div>
-                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <TiHtml5
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "#f06529",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">HTML</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <FaCss3Alt
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "#2965f1",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">CSS</p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <FaReact
                       style={{
-                        fontSize: "larger",
+                        height: "150px",
+                        width: "100%",
+                        color: "aqua",
                       }}
-                    >
-                      <RiJavascriptFill
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "#f0db4f",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">JavaScript</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <TbBrandCpp
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          color: "#0057B8",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">C++</p>
-                      </div>
-                    </div>
-                  </div>
+                    />
 
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
-                      style={{
-                        fontSize: "larger",
-                      }}
-                    >
-                      <FcLinux
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                          // color: "#0057B8",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">Linux</p>
-                      </div>
+                    <div className="card-body skill-name">
+                      <p className="card-text">React</p>
                     </div>
                   </div>
                 </div>
-                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
+
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <BiLogoSpringBoot
                       style={{
-                        fontSize: "larger",
+                        height: "150px",
+                        width: "100%",
+                        color: "forestgreen",
                       }}
-                    >
-                      <IoLogoGithub
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">GitHub</p>
-                      </div>
+                    />
+
+                    <div className="card-body skill-name">
+                      <p className="card-text">Spring Boot</p>
                     </div>
                   </div>
-                  <div className="col skill-cols">
-                    <div
-                      className="card shadow-sm skill-card"
+                </div>
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <SiMysql
                       style={{
-                        fontSize: "larger",
+                        height: "150px",
+                        width: "100%",
+                        color: "#00758f",
                       }}
-                    >
-                      <DiJenkins
-                        style={{
-                          height: "150px",
-                          width: "100%",
-                        }}
-                      />
-                      <div className="card-body skill-name">
-                        <p className="card-text">Jenkins</p>
-                      </div>
+                    />
+
+                    <div className="card-body skill-name">
+                      <p className="card-text">MySQL</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <BiLogoAws
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                        backgroundColor: "#131A22",
+                        color: "aliceblue",
+                      }}
+                    />
+
+                    <div className="card-body skill-name">
+                      <p className="card-text">AWS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <TiHtml5
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                        color: "#f06529",
+                      }}
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">HTML</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <FaCss3Alt
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                        color: "#2965f1",
+                      }}
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">CSS</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <RiJavascriptFill
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                        color: "#f0db4f",
+                      }}
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">JavaScript</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <TbBrandCpp
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                        color: "#0057B8",
+                      }}
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">C++</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <FcLinux
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                        // color: "#0057B8",
+                      }}
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">Linux</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <IoLogoGithub
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                      }}
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">GitHub</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col skill-cols">
+                  <div
+                    className="card shadow-sm skill-card"
+                    style={{
+                      fontSize: "larger",
+                    }}
+                  >
+                    <DiJenkins
+                      style={{
+                        height: "150px",
+                        width: "100%",
+                      }}
+                    />
+                    <div className="card-body skill-name">
+                      <p className="card-text">Jenkins</p>
                     </div>
                   </div>
                 </div>
@@ -337,6 +338,7 @@ const Overview = () => {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };

@@ -8,7 +8,7 @@ import ScrollProgress from "../components/ScrollProgress";
 import Framer2Face from "../components/2face/Framer2Face";
 import Coder from "../components/Coder";
 import Developer from "../components/Developer";
-import ImgGrid from "../components/ImageGrids/ImgGrid";
+import ProjectGrid from "../components/ImageGrids/ProjectGrid";
 function App() {
   return (
     <>
@@ -18,9 +18,9 @@ function App() {
           {/* <ScrollProgress /> */}
           {/* <Framer2Face /> */}
           {/* <Coder /> */}
-          <ImgGrid />
+          {/* <ProjectGrid /> */}
           {/* <Developer /> */}
-          {/* <Outlet /> */}
+          <Outlet />
           <Footer />
         </div>
       </MyProjectProvider>

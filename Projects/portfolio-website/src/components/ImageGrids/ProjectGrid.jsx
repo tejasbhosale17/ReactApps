@@ -1,14 +1,14 @@
 import { motion, spring } from "framer-motion";
 import "./projectGrid.min.css";
-import img1 from "../assets/gridImg/img1 .jpeg";
-import img2 from "../assets/gridImg/img9.jpg";
-import img3 from "../assets/gridImg/img3.png";
-import img4 from "../assets/gridImg/img7.jpg";
-import img5 from "../assets/gridImg/img4.jpg";
-import img6 from "../assets/gridImg/img8.jpg";
-import img7 from "../assets/gridImg/img2.jpg";
-import img8 from "../assets/gridImg/img6.jpg";
-import img9 from "../assets/gridImg/img5.jpg";
+import img1 from "../../assets/ProjectGridImg/img1 .jpeg";
+import img2 from "../../assets/ProjectGridImg/img9.jpg";
+import img3 from "../../assets/ProjectGridImg/img3.png";
+import img4 from "../../assets/ProjectGridImg/img7.jpg";
+import img5 from "../../assets/ProjectGridImg/img4.jpg";
+import img6 from "../../assets/ProjectGridImg/img8.jpg";
+import img7 from "../../assets/ProjectGridImg/img2.jpg";
+import img8 from "../../assets/ProjectGridImg/img6.jpg";
+import img9 from "../../assets/ProjectGridImg/img5.jpg";
 import { useState } from "react";
 // const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 const ProjectGrid = () => {
