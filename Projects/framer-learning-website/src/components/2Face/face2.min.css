@@ -13,10 +13,10 @@
   transition: width 0.1s;
 }
 #face1{
-  background-image: url("../assets/2faceImg/newImages/profileImg1.png");
+  background-image: url("../../assets//2face/profileImg1.png");
 }
 #face2{
-  background-image: url("../assets/2faceImg/newImages/firstImg.png");
+  background-image: url("../../assets//2face/firstImg.png");
   background-position: 100% 0;
 }
 .faces{

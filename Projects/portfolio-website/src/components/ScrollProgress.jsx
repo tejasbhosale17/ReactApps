@@ -79,7 +79,7 @@ const ScrollProgress = () => {
 
   return (
     <div className="work-main">
-      <div className="portfolio" ref={ref} style={{ marginTop: "100px" }}>
+      <div className="portfolio" ref={ref}>
         <div className="my-progress">
           <h1>Featured Works</h1>
           <motion.div style={{ scaleX }} className="progressBar"></motion.div>

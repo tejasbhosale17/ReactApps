@@ -1,6 +1,7 @@
 import "./face2.min.css";
 // import "./2face/script";
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const Face2 = () => {
   var screenWidth = window.innerWidth - 100;
@@ -34,7 +35,7 @@ const Face2 = () => {
       } else if (xDirection === "right" && currentHeight < facesHeight) {
         moveLeft(face1Width, face2Width);
       } else if (currentHeight > facesHeight) {
-        resetStyles();
+        // resetStyles();
       }
     }
 
@@ -63,15 +64,15 @@ const Face2 = () => {
         var percent = getPercentage(face2Width, screenWidth / 4) / 100;
         text2.style.opacity = percent > 0.25 ? percent : 0;
 
-        //Move image left
-        var picPos = faces.offsetLeft;
-        var maxLeft = 150;
-        if (picPos < maxLeft) {
-          // var lft = faces.style.left - 100;
-          // if (lft < window.innerWidth) {
-          faces.style.left = picPos - 5 + "px";
-          // }
-        }
+        // //Move image left
+        // var picPos = faces.offsetLeft;
+        // var maxLeft = 150;
+        // if (picPos < maxLeft) {
+        //   // var lft = faces.style.left - 100;
+        //   // if (lft < window.innerWidth) {
+        //   faces.style.left = picPos - 5 + "px";
+        //   // }
+        // }
       }
     }
 
@@ -87,30 +88,30 @@ const Face2 = () => {
         var percent = getPercentage(face2Width, screenWidth / 4) / 100;
         text2.style.opacity = percent > 0.25 ? percent : 0;
 
-        //Move Image Right
-        var picPos = faces.offsetLeft;
-        var maxRight = screenWidth / 2 - 150;
-        if (picPos > maxRight) {
-          // var leftSize = faces.style.left - 100;
-          // if (leftSize > window.innerWidth) {
-          faces.style.left = picPos + 5 + "px";
-          // }
-        }
+        // //Move Image Right
+        // var picPos = faces.offsetLeft;
+        // var maxRight = screenWidth / 2 - 150;
+        // if (picPos > maxRight) {
+        //   // var leftSize = faces.style.left - 100;
+        //   // if (leftSize > window.innerWidth) {
+        //   faces.style.left = picPos + 5 + "px";
+        //   // }
+        // }
       }
     }
 
     function getPercentage(width, total) {
       return (width * 100) / total;
     }
-    function resetStyles() {
-      face1.style.width = "50%";
-      face2.style.width = "50%";
+    // function resetStyles() {
+    //   face1.style.width = "50%";
+    //   face2.style.width = "50%";
 
-      text1Ref.current.style.opacity = 1;
-      text2Ref.current.style.opacity = 1;
+    //   text1Ref.current.style.opacity = 1;
+    //   text2Ref.current.style.opacity = 1;
 
-      faces.style.left = "25%";
-    }
+    //   faces.style.left = "25%";
+    // }
 
     document.body.addEventListener("mousemove", handleMouseMove);
 
@@ -131,14 +132,19 @@ const Face2 = () => {
                 beautiful user frendly websites made changes
               </p>
             </div>
-            <div className="faces col-lg-6" id="faces" ref={facesRef}>
+            <motion.div
+              className="faces col-lg-6"
+              id="faces"
+              ref={facesRef}
+              animate={{ x: 100 }}
+            >
               <div className="face" id="face1" ref={face1Ref}>
                 {" "}
               </div>
               <div className="face" id="face2" ref={face2Ref}>
                 {" "}
               </div>
-            </div>
+            </motion.div>
             <div className="text col-lg-3" id="text2" ref={text2Ref}>
               <h1 style={{ fontSize: "5.6rem" }}>
                 <span className="chevron-left">&lt;</span>coder

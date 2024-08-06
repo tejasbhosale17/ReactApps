@@ -3,7 +3,8 @@ position: relative;
 font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
 
 }
-section{
+
+.work-main section{
   height: 100vh;
   scroll-snap-align: center;
 }
