@@ -1,3 +1,5 @@
+import Developer from "./Developer";
+import Coder from "./Coder";
 import "./face2.min.css";
 // import "./2face/script";
 import { useEffect, useRef } from "react";
@@ -29,11 +31,19 @@ const Face2 = () => {
       var facesHeight = faces.offsetHeight;
       var currentHeight = e.pageY;
 
-      if (xDirection === "left" && currentHeight < facesHeight) {
+      if (
+        xDirection === "left" &&
+        currentHeight < facesHeight &&
+        currentHeight > 90
+      ) {
         moveRight(face1Width, face2Width);
-      } else if (xDirection === "right" && currentHeight < facesHeight) {
+      } else if (
+        xDirection === "right" &&
+        currentHeight < facesHeight &&
+        currentHeight > 90
+      ) {
         moveLeft(face1Width, face2Width);
-      } else if (currentHeight > facesHeight) {
+      } else if (currentHeight > facesHeight || currentHeight < 90) {
         resetStyles();
       }
     }
@@ -125,9 +135,11 @@ const Face2 = () => {
         <div className="row">
           <div className="col-12">
             <div className="text col-lg-3" id="text1" ref={text1Ref}>
-              <h1 style={{ fontSize: "5.6rem" }}>designer</h1>
+              <a style={{ fontSize: "5.6rem" }} href={<Developer />}>
+                developer
+              </a>
               <p>
-                Designer with apassion and creativity for designing <br />{" "}
+                Developer with a passion and creativity for designing <br />{" "}
                 beautiful user frendly websites made changes
               </p>
             </div>
@@ -141,7 +153,8 @@ const Face2 = () => {
             </div>
             <div className="text col-lg-3" id="text2" ref={text2Ref}>
               <h1 style={{ fontSize: "5.6rem" }}>
-                <span className="chevron-left">&lt;</span>coder
+                <span className="chevron-left">&lt;</span>
+                <a href={<Coder />}>coder</a>
                 <span className="chevron-right">&gt;</span>
               </h1>
               <p>
