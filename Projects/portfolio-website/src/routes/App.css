@@ -3,35 +3,6 @@
   background-color: #f9f9f9;
 }
 
-.header{
-  background-color:#111;
-  padding: 0 5%;
-  width: 100%;
-  position: absolute;
-  z-index: 1000;
-  top: 0px;
-  font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-}
-
-.header nav li a{
-  display: block;
-  color: #FFF;
-  line-height: 92px;
-  padding: 0 1em;
-  text-decoration: none;
-  list-style: none;
-}
-.nav-text{
-  margin-right: 30px;
-}
-
-.nav-social-logo{
-  width: 30px;
-  height: 30px;
-  margin: 15px 15px;
-  color: #FFF;
-}
-
 .project{
   width: "18rem" ;
 }
@@ -63,25 +34,8 @@
   margin-right: 30%;
   margin-top: 150px;
 }
-.contect-me-profile-img{
-  background-image: url("../assets/contectMeProfileImg.png");
-  height: 100%;
-}
 
-.social-disc li{
-  height: 5rem;
-  margin-bottom: 3.2rem;
-  display: inline-block;
-  width: 49%;
-}
-.social-disc li a {
-  padding-left: -0.4rem;
-  line-height: 5rem;
-  display: block;
-  height: 5rem;
-  text-decoration: none;
-  font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-}
+
 /* .social-disc li a.twitter {
   background-position: 0px -598px;
   color: #189ACD;
