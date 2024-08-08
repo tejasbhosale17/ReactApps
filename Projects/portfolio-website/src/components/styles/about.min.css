@@ -1,0 +1,52 @@
+
+
+.intro{
+  border-bottom: #dddddd solid 1px;
+  padding: 6.4rem 4.3rem;
+}
+
+
+
+.desc-intro h1{
+  color: #333333;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 5rem;
+}
+.desc-intro .intro-heading{
+  font-size: 1.4rem;
+  color: #757575;
+  line-height: 1.3;
+
+}
+.skill-chart{
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  padding: 3.6rem 4.3rem;
+  border-bottom: #dddddd solid 1px;
+  height: 500px;
+}
+.skill-chart .pie-chart{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.skill-chart .developer{
+text-align: left;
+margin-top: 50px;
+width: 13%;
+}
+.skill-chart .coder{
+text-align: right;
+margin-top: 50px;
+width: 13%;
+}
+.pie-chart ul{
+  list-style-type: none;
+  line-height: 1.5;
+  padding: 0%;
+}
+.pie-chart li{
+  margin-bottom: 0.8rem;
+
+}

@@ -1,6 +1,8 @@
 
 .home{
   background-color: #f9f9f9;
+  /* font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif; */
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
 
 .project{
