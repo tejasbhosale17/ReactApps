@@ -8,6 +8,7 @@ import Career from "./components/Career.jsx";
 import ContactMe from "./components/ContectMe.jsx";
 import MyWorkProvider from "./store/work-list-store.jsx";
 import ScrollProgress from "./components/ScrollProgress.jsx";
+import About from "./components/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/contactme",
         element: <ContactMe />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },

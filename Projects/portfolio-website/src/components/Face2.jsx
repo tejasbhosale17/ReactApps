@@ -1,6 +1,6 @@
 import Developer from "./Developer";
 import Coder from "./Coder";
-import "./face2.min.css";
+import "../components/styles/face2.min.css";
 // import "./2face/script";
 import { useEffect, useRef } from "react";
 
@@ -63,8 +63,8 @@ const Face2 = () => {
 
     function moveLeft(face1Width, face2Width) {
       if (face2Width < maxWidth) {
-        face2.style.width = `${face2Width + 40}px`;
-        face1.style.width = `${face1Width - 40}px`;
+        face2.style.width = `${face2Width + 45}px`;
+        face1.style.width = `${face1Width - 45}px`;
 
         //change opacity
         var percentage = getPercentage(face1Width, screenWidth / 4) / 100;
@@ -87,8 +87,8 @@ const Face2 = () => {
 
     function moveRight(face1Width, face2Width) {
       if (face1Width < maxWidth) {
-        face1.style.width = `${face1Width + 40}px`;
-        face2.style.width = `${face2Width - 40}px`;
+        face1.style.width = `${face1Width + 45}px`;
+        face2.style.width = `${face2Width - 45}px`;
 
         //chnage opacity
         var percentage = getPercentage(face1Width, screenWidth / 4) / 100;

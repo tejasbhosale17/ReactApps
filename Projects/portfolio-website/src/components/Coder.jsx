@@ -1,4 +1,4 @@
-import profileImage from "../assets/coder/leetcode_profile_ss.png";
+import leetcodeProfileImage from "../assets/coder/leetcode_profile_ss.png";
 import hackerRankImg from "../assets/coder/hackerRank_profile_ss.png";
 const Coder = () => {
   const leetcodeProfileUrl = "https://leetcode.com/your-username/";
@@ -20,7 +20,7 @@ const Coder = () => {
               rel="noopener noreferrer"
             >
               <img
-                src={hackerRankImg}
+                src={leetcodeProfileImage}
                 alt="LeetCode Profile"
                 style={{
                   padding: "0 50px",
@@ -33,9 +33,13 @@ const Coder = () => {
           </div>
           <div className="col-5">
             <div className="hackerrank">
-              <a href={profileUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                href={hackerRankProfileurl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
-                  src={hackerRankProfileurl}
+                  src={hackerRankImg}
                   alt="HackerRank Profile"
                   style={{
                     padding: "0 50px",

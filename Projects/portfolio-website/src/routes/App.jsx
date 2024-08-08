@@ -9,6 +9,7 @@ import Framer2Face from "../components/2face/Framer2Face";
 import Coder from "../components/Coder";
 import Developer from "../components/Developer";
 import ProjectGrid from "../components/ImageGrids/ProjectGrid";
+import About from "../components/About";
 function App() {
   return (
     <>
@@ -20,7 +21,8 @@ function App() {
           {/* <Coder /> */}
           {/* <ProjectGrid /> */}
           {/* <Developer /> */}
-          <Outlet />
+          {/* <Outlet /> */}
+          <About />
           <Footer />
         </div>
       </MyProjectProvider>

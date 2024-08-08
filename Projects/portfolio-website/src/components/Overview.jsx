@@ -1,5 +1,5 @@
 import homeBgImg from "../assets/homebg.png";
-import "./overview.min.css";
+import "../components/styles/overview.min.css";
 import { SiMysql } from "react-icons/si";
 import { BiLogoJava } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";

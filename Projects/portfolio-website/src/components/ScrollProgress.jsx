@@ -4,7 +4,7 @@ import { useRef } from "react";
 import "../components/styles/scrollProgress.css";
 import codeGurukulImg from "../assets/work1.jpg";
 import sunbeamImg from "../assets/work2.jpeg";
-import amazonImg from "../assets/skillsLogo/reactLogo.png";
+// import amazonImg from "../assets/skillsLogo/reactLogo.png";
 
 const items = [
   {
@@ -25,15 +25,15 @@ const items = [
       "• My Task involves the Development of an application for the Vehicle Servicing Center using Java JDBC. • The Purpose of this application is to store customers, vehicles, services data and also keep track of available parts, and generate the bill amount according to the respective.",
     projectDemo: "www.leetcode.com",
   },
-  {
-    id: "3",
-    title: "React Developer",
-    companey: "Amazon Inc",
-    imgLink: amazonImg,
-    description:
-      "fkavbkkabn fbaifnbafua nb afbunsbfuba ahuifaniuytfrfewsrt wetryuihjobv rd6f7gy8b vtrd 6f57gy8hu inyt res5 465f7gy8hu rde5 67gyrd ft gyhiufdr 6rft7g y8huji nbves5678 ghunhutdr6ft7g y8huojnhbvc xcvbnm ghnbvc fghjnbv cx vfubhnojln",
-    projectDemo: "www.amazon.com",
-  },
+  // {
+  //   id: "3",
+  //   title: "React Developer",
+  //   companey: "Amazon Inc",
+  //   imgLink: amazonImg,
+  //   description:
+  //     "fkavbkkabn fbaifnbafua nb afbunsbfuba ahuifaniuytfrfewsrt wetryuihjobv rd6f7gy8b vtrd 6f57gy8hu inyt res5 465f7gy8hu rde5 67gyrd ft gyhiufdr 6rft7g y8huji nbves5678 ghunhutdr6ft7g y8huojnhbvc xcvbnm ghnbvc fghjnbv cx vfubhnojln",
+  //   projectDemo: "www.amazon.com",
+  // },
 ];
 
 const Single = ({ item }) => {

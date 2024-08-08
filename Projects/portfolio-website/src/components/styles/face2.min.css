@@ -11,6 +11,7 @@
   float: left;
   background-size: cover;
   transition: width 0.1s;
+ 
 }
 #face1{
   background-image: url("../assets/2faceImg/newImages/profileImg1.png");

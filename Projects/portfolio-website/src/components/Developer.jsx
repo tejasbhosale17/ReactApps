@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import awsLogo from "../assets/skillsLogo/awsLogo.png";
-import cssLogo from "../assets/skillsLogo/cssLogo.png";
-import htmlLogo from "../assets/skillsLogo/htmlLogo.png";
-import mysqlLogo from "../assets/skillsLogo/mysqlLogo.png";
+// import awsLogo from "../assets/skillsLogo/awsLogo.png";
+// import cssLogo from "../assets/skillsLogo/cssLogo.png";
+// import htmlLogo from "../assets/skillsLogo/htmlLogo.png";
+// import mysqlLogo from "../assets/skillsLogo/mysqlLogo.png";
 const Developer = () => {
   return (
     // <div
@@ -30,7 +30,7 @@ const Developer = () => {
           scale: 1.05,
         }}
       >
-        <img src={awsLogo} className="card-img-top" alt="..." />
+        <img src={"awsLogo"} className="card-img-top" alt="..." />
       </motion.div>
       <motion.div
         className="card"
@@ -40,7 +40,7 @@ const Developer = () => {
           scale: 1.2,
         }}
       >
-        <img src={cssLogo} className="card-img-top" alt="..." />
+        <img src={"cssLogo"} className="card-img-top" alt="..." />
       </motion.div>
       <motion.div
         className="card"
@@ -50,7 +50,7 @@ const Developer = () => {
           scale: 1.05,
         }}
       >
-        <img src={htmlLogo} className="card-img-top" alt="..." />
+        <img src={"htmlLogo"} className="card-img-top" alt="..." />
       </motion.div>
       <motion.div
         className="card"
@@ -60,7 +60,7 @@ const Developer = () => {
           scale: 1.05,
         }}
       >
-        <img src={mysqlLogo} className="card-img-top" alt="..." />
+        <img src={"mysqlLogo"} className="card-img-top" alt="..." />
       </motion.div>
     </div>
   );
