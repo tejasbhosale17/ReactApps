@@ -2,6 +2,7 @@ import profileImg from "../assets/2faceImg/newImages/firstImg.png";
 import "./styles/about.min.css";
 import skillPiChartImg from "../assets/skill-piChart.png";
 import Qualifications from "./qualifications/Qualifications";
+import ProjectCards from "./project-cards/ProjectCards";
 const About = () => {
   return (
     <div className="about">
@@ -79,6 +80,7 @@ const About = () => {
       </section>
 
       <Qualifications />
+      <ProjectCards />
     </div>
   );
 };

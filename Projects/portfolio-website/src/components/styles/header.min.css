@@ -18,6 +18,7 @@
 }
 .nav-text{
   margin-right: 30px;
+  font-size: 1.3rem;
 }
 
 .nav-social-logo{
@@ -25,4 +26,15 @@
   height: 30px;
   margin: 15px 15px;
   color: #FFF;
+}
+.nav-social-logo:hover{
+  color:#363636;
+  scale: 0.9;
+}
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+color:#363636;
+scale: 0.9;
 }
