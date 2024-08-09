@@ -1,12 +1,13 @@
 import profileImg from "../assets/2faceImg/newImages/firstImg.png";
 import "./styles/about.min.css";
 import skillPiChartImg from "../assets/skill-piChart.png";
+import Qualifications from "./qualifications/Qualifications";
 const About = () => {
   return (
     <div className="about">
       <section className="intro" style={{ backgroundColor: "white" }}>
         <div className="container col-xxl-8 px-4 py-5">
-          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div className="row flex-lg-row-reverse align-items-center g-5">
             <div className="col-10 col-sm-8 col-lg-6">
               <img
                 src={profileImg}
@@ -76,6 +77,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <Qualifications />
     </div>
   );
 };
